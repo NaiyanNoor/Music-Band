@@ -1,0 +1,624 @@
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+}
+html{
+     scroll-behavior: smooth;
+ }
+body{
+		font-family: 'Poppins';
+		position: relative;
+		font-size:16px;
+    background-color: #f8f9fa 
+
+}
+/*Start Clock*/
+  #clock {
+  font-size: 15px;
+	border: 2px solid #ddd;
+  padding: 5px 20px;
+  font-size: 16px;
+  margin-left: 10px;
+	color: #ffffff;
+        }
+
+/*End Clock*/
+
+
+/*Start Navbar */
+  .navbar{
+  background-color:rgb(236, 236, 236);
+  margin-bottom: 0%;
+  border-top: 2px solid rgba(142, 142, 142, .5);
+  }
+  
+  .nav-item .nav-link{
+  color: rgb(197, 131, 215);
+  }
+  
+  .nav-item .nav-link:hover{
+      background-color: rgba(37, 135, 239, 0.5);
+      display: inline-block;
+      width: auto;
+      }
+      
+/* End navbar CSS */
+
+
+
+
+/*One Direction Official Page*/
+.bg-light {
+  background-color: #f8f9fa !important;
+
+}
+
+
+
+
+/*End Member Profile */
+
+/* General Styling for Menu Card */
+.menu-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.menu-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Food Menu Grid */
+.food-menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+  gap: 20px;
+  justify-items: center;
+}
+
+.food-item {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.food-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.food-info {
+  padding: 15px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.food-info h3 {
+  font-size: 22px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.food-info p {
+  font-size: 16px;
+  color: #777;
+}
+
+/* Hover effect for food items */
+.food-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.food-item:hover .food-info {
+  background-color: #f1f1f1;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .food-menu {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+  }
+
+  .food-item img {
+      height: 180px; /* Reduce image height for medium screens */
+  }
+
+  .food-info h3 {
+      font-size: 20px;
+  }
+
+  .food-info p {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .food-menu {
+      grid-template-columns: 1fr; /* Stack food items vertically on small screens */
+  }
+
+  .food-item img {
+      height: 150px; /* Further reduce image height on small screens */
+  }
+
+  .food-info h3 {
+      font-size: 18px;
+  }
+
+  .food-info p {
+      font-size: 14px;
+  }
+}
+
+/*-----*/
+/* Unordered list styling */
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Menu item styling */
+.menu-item {
+  background-color: #e6ea79;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #232020;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for menu items */
+.menu-item:hover {
+  background-color: #a39999;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .card {
+      width: 250px;
+      padding: 15px;
+  }
+  .card-title {
+      font-size: 20px;
+  }
+  .menu-item {
+      font-size: 14px;
+  }
+}
+
+
+
+
+
+/* gellery Section Start */
+
+.gellary-section {
+  padding-top: 0px;
+  padding-bottom: 1px;
+}
+.gellery-title {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.gellery-box {
+display:flex;
+
+}
+.image {
+width:300px;
+height:300px;
+background:grey;
+background-size:cover;
+background-position:center;
+transition:0.3s;
+}
+.image1 {
+background-image:url('../img/Gallary1.jpg');
+}
+.image2 {
+background-image:url('../img/Gallary2.png');
+}
+.image3 {
+background-image:url('../img/Gallary\ 3.jpg');
+}
+.image4 {
+background-image:url('../img/Gallary\ 4.png');
+}
+.image5 {
+background-image:url('../img/Gallary\ 5.png');
+}
+.image6 {
+background-image:url('../img/Gallary\ 6.jpg');
+}
+.image7 {
+background-image:url('../img/Gallary\ 7.jpg');
+}
+.image8 {
+background-image:url('../img/Gallary\ 8.jpg');
+}
+.image:hover {
+transition:0.3s;
+width:600px;
+}
+
+/* gellery Section End */
+
+
+/*Start Review Section*/
+
+#testimonials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width:100%;
+padding-top:30px;
+}
+.testimonial-heading{
+  letter-spacing: 1px;
+  margin: 30px 0px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-heading span {
+  font-size: 20px;
+  color: #252525;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.testimonial-box-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width:100%;
+}
+.testimonial-box{
+  width:500px;
+  box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 15px;
+  cursor: pointer;
+}
+.profile-img{
+  width:50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.profile-img img{
+  width: 100%;
+  height: 100%;
+}
+.profile{
+  display: flex;
+  align-items: center;
+}
+.name-user{
+  display: flex;
+  flex-direction: column;
+}
+.name-user strong{
+  color: #3d3d3d;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+.name-user span{
+  color: #979797;
+  font-size: 0.8rem;
+}
+.reviews{
+  color: #f9d71c;
+}
+.box-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.client-comment p{
+  font-size: 0.9rem;
+  color: #4b4b4b;
+}
+.testimonial-box:hover{
+  transform: translateY(-10px);
+  transition: all ease 0.3s;
+}
+
+/*End Review Section */
+
+
+
+/* start Our Team*/
+
+.food-staff-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.food-staff-section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Staff Container */
+.food-staff-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.food-staff-profile {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-staff-profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.food-staff-profile h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.food-staff-profile p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Hover Effect */
+.food-staff-profile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 1024px) {
+  .food-staff-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 items per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .food-staff-container {
+      grid-template-columns: 1fr; /* 1 item per row on smaller screens */
+  }
+}
+/*Team Section End*/
+
+
+
+
+/*Our Company */
+.company{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+/* code for phone layout */
+@media (max-width:850px){
+  .team-member {
+    width:25%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 40px;
+    
+  } 
+}
+
+@media (max-width:650px){
+  .team-member {
+    float: none;
+    display: block;
+    margin: 50px auto;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .team-member h3,
+  .team-member span {
+    margin: 15px auto;
+  }
+}
+/*End Our Company */
+
+
+
+
+
+/*Start Contact section*/
+.contact-section {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.contact-form {
+    border: 1px solid #ddd;
+    padding: 20px;
+
+}
+.contact h2 {
+    font-size: 30px;
+    text-align: center;
+	margin-bottom: 40px;
+}
+
+.contact-info {
+  display: flex;
+  padding-left:60px;
+}
+
+ul {
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+ul li {
+  list-style: none;
+  margin: 10px 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background: #2c8ec7;
+  border-radius: 50%;
+  margin-right: 15px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+}
+/*End Contact section*/
+
+
+
+/* Star faq section*/
+
+.faq-section {
+  padding-top: 60px;
+}
+.accordion {
+padding: 1.2rem 0;
+border-radius: 1rem;
+background: white;
+/*   box-shadow: 0 0 5rem lightgrey; */
+}
+
+.accordion__heading {
+margin-bottom: 30px;
+padding: 0 1.4rem;
+}
+
+.accordion__btn {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+padding: 1.2rem 1.4rem;
+background: white;
+border: none;
+outline: none;
+
+font-size: 1.2rem;
+text-align: left;
+cursor: pointer;
+transition: 0.1s;
+border-top:2px solid #ddd;
+}
+.accordion__btn:hover {
+
+background: hsl(248, 53%, 97%);
+}
+
+.accordion__item--active .accordion__btn {
+background: hsl(248, 53%, 97%);
+}
+
+.fa-lightbulb {
+padding-right: 1rem;
+}
+.accordion__icon {
+border-radius: 50%;
+transform: rotate(0deg);
+transition: 0.3s ease-in-out;
+opacity: 0.9;
+}
+.accordion__item--active .accordion__icon {
+transform: rotate(135deg);
+}
+
+.accordion__content {
+font-weight: 300;
+max-height: 0;
+opacity: 0;
+overflow: hidden;
+transform: translateX(16px);
+transition: max-height 0.5s ease, opacity 0.5s, transform 0.5s;
+}
+.accordion__content p {
+padding: 1rem 1.8rem;
+}
+
+.accordion__item--active .accordion__content {
+opacity: 1;
+transform: translateX(0px);
+max-height: 100vh;
+}
+/* End faq section*/
+
+
+
+/* about section
+.company{
+padding-top: 1px;
+    padding-bottom: 18px;
+}
+.com-image img{
+	width:100%;
+	height:auto;
+}
+.com-info h4{
+	font-size:18px;
+}*/
+
+
+
+/* Footer section*/
+.footer-section{
+	background:rgb(236, 236, 236);
+	height:50px;
+	margin-top:60px;
+}
+.footer-section p{
+	text-align:center;
+	color:#101010;
+	font-size:16px;
+	padding-top:10px;
+}
